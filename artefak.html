@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artefak Pembelajaran | E-Portofolio PPG Calon Guru</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="CSS/artefak.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="mesh-bg">
+      <div class="mesh-blob blob-pink"></div>
+      <div class="mesh-blob blob-navy"></div>
+      <div class="mesh-blob blob-coral"></div>
+    </div>
+
+    <header class="navbar" id="navbar">
+      <div class="container nav-container">
+        <div class="nav-left">
+          <img src="logo.png" alt="Logo Universitas" class="univ-logo-img" />
+          <span class="brand-name">E-Portofolio <span class="highlight">PPG.</span></span>
+        </div>
+
+        <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+
+        <nav class="nav-right" id="nav-menu">
+          <a href="index.html" class="nav-link">Beranda</a>
+
+          <div class="dropdown">
+            <button class="nav-link dropbtn">E-Portofolio 1 <i class="fa-solid fa-chevron-down chevron"></i></button>
+            <div class="dropdown-content">
+              <a href="profile.html"><i class="fa-solid fa-user-graduate"></i> Profil Mahasiswa</a>
+              <a href="artefak.html"><i class="fa-solid fa-file-waveform"></i> Artefak Produk</a>
+              <a href="penilaian.html"><i class="fa-solid fa-list-check"></i>Penilaian GP</a>
+              <a href="modelguru.html"><i class="fa-solid fa-bullseye"></i> Model Guru</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="nav-link dropbtn">E-Portofolio 2 <i class="fa-solid fa-chevron-down chevron"></i></button>
+            <div class="dropdown-content">
+              <a href="refleksi.html"><i class="fa-solid fa-arrows-rotate"></i> Refleksi Akhir</a>
+              <a href="filosofi.html"><i class="fa-solid fa-seedling"></i> Filosofi Mengajar</a>
+            </div>
+          </div>
+
+          <a href="dokumentasi.html" class="nav-link">Dokumentasi</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="artefak-main">
+      <section class="hero-artefak">
+        <div class="container text-center">
+          <div class="badge-tech fade-in-up" style="animation-delay: 0.1s"><i class="fa-solid fa-layer-group"></i> Ruang Karya E-Portofolio 1</div>
+          <h1 class="hero-title fade-in-up" style="animation-delay: 0.3s">Artefak & <span class="text-gradient">Perangkat Pembelajaran</span></h1>
+          <p class="hero-desc fade-in-up" style="animation-delay: 0.5s">Eksplorasi dokumen rancangan pembelajaran PJOK beserta analisis reflektif mengenai kendala, landasan teori, faktor keberhasilan, dan adaptabilitas ruang kelas.</p>
+        </div>
+      </section>
+
+      <section class="document-section reveal">
+        <div class="container">
+          <div class="doc-identity-bar">
+            <div class="identity-item">
+              <i class="fa-solid fa-book"></i>
+              <div>
+                <label>Mata Pelajaran</label>
+                <h4>PJOK (Penjasorkes)</h4>
+              </div>
+            </div>
+            <div class="identity-item">
+              <i class="fa-solid fa-school"></i>
+              <div>
+                <label>Sekolah Mitra (PPL)</label>
+                <h4>SMA Negeri 4 Surakarta</h4>
+              </div>
+            </div>
+            <div class="identity-item">
+              <i class="fa-solid fa-users-viewfinder"></i>
+              <div>
+                <label>Fase / Kelas</label>
+                <h4>Fase E / Kelas X</h4>
+              </div>
+            </div>
+            <div class="identity-item">
+              <i class="fa-solid fa-laptop-code"></i>
+              <div>
+                <label>Topik Materi</label>
+                <h4>Kebugaran Jasmani</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="pdf-tabs-container">
+            <div class="tab-buttons">
+              <button class="tab-btn active" onclick="openPdfTab(event, 'tab-modul')"><i class="fa-solid fa-book-open"></i> Modul Ajar</button>
+              <button class="tab-btn" onclick="openPdfTab(event, 'tab-lkpd')"><i class="fa-solid fa-clipboard-list"></i> LKPD</button>
+              <button class="tab-btn" onclick="openPdfTab(event, 'tab-rubrik')"><i class="fa-solid fa-spell-check"></i> Observasi</button>
+            </div>
+
+            <div id="tab-modul" class="tab-content active">
+              <div class="pdf-wrapper">
+                <iframe src="Dokumen/RPP BOLA VOLI X1 TKKR.pdf" title="RPP Bola Voli Kelas X" loading="lazy"></iframe>
+              </div>
+              <div class="doc-actions">
+                <a href="Dokumen/RPP BOLA VOLI X1 TKKR.pdf" target="_blank" class="btn-glow"> <i class="fa-solid fa-up-right-from-square"></i> Buka Layar Penuh </a>
+                <a href="Dokumen/RPP BOLA VOLI X1 TKKR.pdf" download="RPP_BOLA_VOLI_X1_TKKR.pdf" class="btn-outline-sport"> <i class="fa-solid fa-download"></i> Unduh Modul </a>
+              </div>
+
+              <div class="pdf-wrapper" style="margin-top: 100px">
+                <iframe src="Dokumen/RPP RENANG GAYA BEBAS XI TKKR 1.pdf" title="RPP Renang Gaya Bebas Kelas XI" loading="lazy"></iframe>
+              </div>
+              <div class="doc-actions">
+                <a href="Dokumen/RPP RENANG GAYA BEBAS XI TKKR 1.pdf" target="_blank" class="btn-glow"> <i class="fa-solid fa-up-right-from-square"></i> Buka Layar Penuh </a>
+                <a href="Dokumen/RPP RENANG GAYA BEBAS XI TKKR 1.pdf" download="RPP_RENANG_GAYA_BEBAS_XI_TKKR_1.pdf" class="btn-outline-sport"> <i class="fa-solid fa-download"></i> Unduh Modul </a>
+              </div>
+
+              <div class="pdf-wrapper" style="margin-top: 100px">
+                <iframe src="Dokumen/1. RPP Kebugaran jasmani kelas XI.pdf" title="RPP Kebugaran Jasmani Kelas XI" loading="lazy"></iframe>
+              </div>
+              <div class="doc-actions">
+                <a href="Dokumen/1. RPP Kebugaran jasmani kelas XI.pdf" target="_blank" class="btn-glow"> <i class="fa-solid fa-up-right-from-square"></i> Buka Layar Penuh </a>
+                <a href="Dokumen/1. RPP Kebugaran jasmani kelas XI.pdf" download="RPP_KEBUGARAN_JASMANI_XI.pdf" class="btn-outline-sport"> <i class="fa-solid fa-download"></i> Unduh Modul </a>
+              </div>
+            </div>
+
+            <div id="tab-lkpd" class="tab-content">
+              <div class="pdf-wrapper">
+                <iframe src="Dokumen/LKPD BOLA VOLI.pdf" title="LKPD Bola Voli" loading="lazy"></iframe>
+              </div>
+              <div class="doc-actions">
+                <a href="Dokumen/LKPD BOLA VOLI.pdf" target="_blank" class="btn-glow"> <i class="fa-solid fa-up-right-from-square"></i> Buka Layar Penuh </a>
+                <a href="Dokumen/LKPD BOLA VOLI.pdf" download="LKPD_BOLA_VOLI.pdf" class="btn-outline-sport"> <i class="fa-solid fa-download"></i> Unduh LKPD </a>
+              </div>
+
+              <div class="pdf-wrapper" style="margin-top: 100px">
+                <iframe src="Dokumen/LKPD Renang Gaya Bebas.pdf" title="LKPD Renang Gaya Bebas" loading="lazy"></iframe>
+              </div>
+              <div class="doc-actions">
+                <a href="Dokumen/LKPD Renang Gaya Bebas.pdf" target="_blank" class="btn-glow"> <i class="fa-solid fa-up-right-from-square"></i> Buka Layar Penuh </a>
+                <a href="Dokumen/LKPD Renang Gaya Bebas.pdf" download="LKPD_RENANG_GAYA_BEBAS.pdf" class="btn-outline-sport"> <i class="fa-solid fa-download"></i> Unduh LKPD </a>
+              </div>
+
+              <div class="pdf-wrapper" style="margin-top: 100px">
+                <iframe src="Dokumen/LKPD Kebugaran jasmani.pdf" title="LKPD Kebugaran jasmani" loading="lazy"></iframe>
+              </div>
+              <div class="doc-actions">
+                <a href="Dokumen/LKPD Kebugaran jasmani.pdf" target="_blank" class="btn-glow"> <i class="fa-solid fa-up-right-from-square"></i> Buka Layar Penuh </a>
+                <a href="Dokumen/LKPD Kebugaran jasmani.pdf" download="LKPD_KEBUGARAN_JASMANI.pdf" class="btn-outline-sport"> <i class="fa-solid fa-download"></i> Unduh LKPD </a>
+              </div>
+            </div>
+
+            <div id="tab-rubrik" class="tab-content">
+              <div class="pdf-wrapper">
+                <iframe src="Dokumen/LKPD BOLA VOLI.pdf" title="Rubrik Penilaian PJOK" loading="lazy"></iframe>
+              </div>
+              <div class="doc-actions">
+                <a href="Dokumen/LKPD BOLA VOLI.pdf" target="_blank" class="btn-glow"> <i class="fa-solid fa-up-right-from-square"></i> Buka Layar Penuh </a>
+                <a href="Dokumen/LKPD BOLA VOLI.pdf" download="Rubrik_Penilaian_PJOK.pdf" class="btn-outline-sport"> <i class="fa-solid fa-download"></i> Unduh Rubrik </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="analysis-zigzag-section reveal">
+        <div class="container">
+          <div class="section-title-modern text-center">
+            <h2>Analisis Artefak Produk <span class="text-gradient">Rencana dan Perangkat Pembelajaran</span></h2>
+            <p>
+              Dalam proses penyusunan produk rencana dan perangkat pembelajaran, terdapat berbagai pengalaman yang menjadi bahan refleksi untuk meningkatkan kualitas pembelajaran. Analisis ini dilakukan terhadap beberapa aspek penting,
+              yaitu kendala yang dihadapi, teori pedagogi yang digunakan, faktor keberhasilan, serta kemungkinan perubahan pada perangkat pembelajaran sesuai situasi kelas.
+            </p>
+          </div>
+
+          <div class="zigzag-row reveal">
+            <div class="zigzag-visual">
+              <div class="visual-card hover-tilt">
+                <i class="fa-solid fa-triangle-exclamation big-icon"></i>
+                <div class="card-decor decor-1"></div>
+              </div>
+            </div>
+            <div class="zigzag-content">
+              <div class="zz-number">A</div>
+              <h3>Kendala yang Terjadi Selama Proses Penyusunan Produk Pembelajaran</h3>
+              <p>
+                Selama proses penyusunan perangkat pembelajaran, terdapat beberapa kendala yang dialami. Salah satunya adalah menyesuaikan karakteristik peserta didik dengan model dan metode pembelajaran yang digunakan. Setiap siswa
+                memiliki kemampuan, minat, dan gaya belajar yang berbeda sehingga diperlukan perencanaan yang matang agar pembelajaran dapat diterima oleh seluruh peserta didik. Selain itu, kendala juga muncul dalam menentukan media
+                pembelajaran yang tepat dan menarik. Keterbatasan fasilitas serta waktu dalam menyiapkan perangkat pembelajaran menjadi tantangan tersendiri. Penyusunan asesmen yang sesuai dengan tujuan pembelajaran juga memerlukan
+                ketelitian agar mampu mengukur aspek pengetahuan, keterampilan, dan sikap secara seimbang.
+              </p>
+            </div>
+          </div>
+
+          <div class="zigzag-row reverse reveal">
+            <div class="zigzag-visual">
+              <div class="visual-card hover-tilt card-accent">
+                <i class="fa-solid fa-brain big-icon-light"></i>
+                <div class="card-decor decor-2"></div>
+              </div>
+            </div>
+            <div class="zigzag-content">
+              <div class="zz-number">B</div>
+              <h3>Teori atau Konsep Pedagogi yang Diadopsi dalam Penyusunan Produk Pembelajaran</h3>
+              <p>
+                Dalam penyusunan perangkat pembelajaran, digunakan beberapa teori dan konsep pedagogi sebagai landasan utama. Salah satunya adalah teori konstruktivisme yang menekankan bahwa peserta didik membangun pemahamannya sendiri
+                melalui pengalaman belajar. Oleh karena itu, pembelajaran dirancang lebih aktif dan berpusat pada peserta didik. Selain itu, konsep pembelajaran berdiferensiasi juga diterapkan untuk menyesuaikan kebutuhan, minat, dan
+                kemampuan siswa yang beragam. Pendekatan pembelajaran mendalam (deep learning) digunakan agar siswa tidak hanya memahami materi secara teori, tetapi juga mampu menerapkannya dalam kehidupan sehari-hari. Prinsip pendidikan Ki
+                Hadjar Dewantara juga menjadi dasar dalam penyusunan perangkat pembelajaran, terutama melalui penerapan nilai Ing Ngarsa Sung Tuladha, Ing Madya Mangun Karsa, Tut Wuri Handayani yang menempatkan guru sebagai teladan,
+                motivator, dan pendamping belajar peserta didik.
+              </p>
+            </div>
+          </div>
+
+          <div class="zigzag-row reveal">
+            <div class="zigzag-visual">
+              <div class="visual-card hover-tilt">
+                <i class="fa-solid fa-ranking-star big-icon icon-coral-text"></i>
+                <div class="card-decor decor-3"></div>
+              </div>
+            </div>
+            <div class="zigzag-content">
+              <div class="zz-number">C</div>
+              <h3>Faktor Keberhasilan Penerapan Produk Pembelajaran</h3>
+              <p>
+                Keberhasilan penerapan perangkat pembelajaran dipengaruhi oleh beberapa faktor. Faktor utama adalah kesiapan guru dalam mengelola kelas dan menguasai materi pembelajaran. Penggunaan metode yang interaktif dan media
+                pembelajaran yang menarik juga membantu meningkatkan partisipasi serta motivasi belajar siswa. Selain itu, suasana kelas yang kondusif dan komunikasi yang baik antara guru dan peserta didik menjadi faktor penting dalam
+                mendukung keberhasilan pembelajaran. Adanya refleksi dan evaluasi setelah pembelajaran juga membantu guru memperbaiki kekurangan sehingga perangkat pembelajaran dapat terus dikembangkan menjadi lebih efektif.
+              </p>
+            </div>
+          </div>
+
+          <div class="zigzag-row reverse reveal">
+            <div class="zigzag-visual">
+              <div class="visual-card hover-tilt card-navy">
+                <i class="fa-solid fa-sliders big-icon-light"></i>
+                <div class="card-decor decor-4"></div>
+              </div>
+            </div>
+            <div class="zigzag-content">
+              <div class="zz-number">D</div>
+              <h3>Perubahan Komponen atau Bagian untuk Situasi Kelas yang Berbeda</h3>
+              <p>
+                Perangkat pembelajaran perlu disesuaikan dengan kondisi dan karakteristik kelas yang berbeda. Pada kelas dengan tingkat kemampuan heterogen, guru dapat melakukan modifikasi pada metode pembelajaran dan tingkat kesulitan
+                tugas agar seluruh siswa tetap dapat mengikuti pembelajaran dengan baik. Selain itu, media pembelajaran dapat disesuaikan dengan fasilitas yang tersedia di sekolah. Jika sarana teknologi terbatas, guru dapat mengganti media
+                digital dengan media sederhana atau pembelajaran berbasis aktivitas langsung. Strategi pengelompokan siswa juga dapat diubah sesuai kebutuhan agar pembelajaran lebih efektif dan kolaboratif. Dengan melakukan penyesuaian
+                tersebut, perangkat pembelajaran menjadi lebih fleksibel dan mampu menciptakan pengalaman belajar yang sesuai dengan kebutuhan peserta didik di berbagai situasi kelas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-container">
+        <!-- BRAND -->
+        <div class="footer-col brand-col">
+          <h3>E-Portofolio<span> PPG</span></h3>
+          <p>Ruang rekam jejak Praktik Pengalaman Lapangan (PPL) 1. Disusun sebagai dokumentasi dan refleksi perjalanan menjadi guru profesional.</p>
+        </div>
+
+        <!-- PORTOFOLIO 1 -->
+        <div class="footer-col links-col">
+          <h4><i class="fa-solid fa-book-open"></i> E-Portofolio 1</h4>
+          <ul>
+            <li>
+              <a href="profile.html"><i class="fa-solid fa-user-graduate"></i> Profil Mahasiswa</a>
+            </li>
+            <li>
+              <a href="artefak.html"><i class="fa-solid fa-file-waveform"></i> Artefak Produk</a>
+            </li>
+            <li>
+              <a href="penilaian.html"><i class="fa-solid fa-list-check"></i> Instrumen Penilaian</a>
+            </li>
+            <li>
+              <a href="modelguru.html"><i class="fa-solid fa-chalkboard-user"></i> Model Guru</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- PORTOFOLIO 2 -->
+        <div class="footer-col links-col">
+          <h4><i class="fa-solid fa-layer-group"></i> E-Portofolio 2</h4>
+          <ul>
+            <li>
+              <a href="refleksi.html"><i class="fa-solid fa-arrows-rotate"></i> Refleksi Akhir</a>
+            </li>
+            <li>
+              <a href="filosofi.html"><i class="fa-solid fa-seedling"></i> Filosofi Mengajar</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- KONTAK -->
+        <div class="footer-col contact-col">
+          <h4><i class="fa-solid fa-location-dot"></i> Lokasi LPTK</h4>
+          <p><i class="fa-solid fa-building-columns"></i> Universitas Negeri Yogyakarta</p>
+          <div class="map-container">
+            <iframe src="https://maps.google.com/maps?q=Universitas%20Negeri%20Yogyakarta&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="150" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="social-links">
+            <a href="mailto:sigitpmngks77@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+            <a href="https://www.instagram.com/sigitps_7/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- COPYRIGHT -->
+      <div class="footer-bottom">
+        <div class="container">
+          <p>© 2026 Sigit Pamungkas - E-Portofolio PPL PPG. Semua Hak Cipta Dilindungi.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // 1. Fungsi Tab Interaktif untuk PDF
+      function openPdfTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        // Sembunyikan semua konten tab
+        tabcontent = document.getElementsByClassName("tab-content");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+          tabcontent[i].classList.remove("active");
+        }
+        // Hapus kelas 'active' dari semua tombol
+        tablinks = document.getElementsByClassName("tab-btn");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].classList.remove("active");
+        }
+        // Tampilkan tab yang diklik dan tambahkan kelas 'active'
+        document.getElementById(tabName).style.display = "block";
+        setTimeout(() => document.getElementById(tabName).classList.add("active"), 10);
+        evt.currentTarget.classList.add("active");
+      }
+
+      // Pastikan tab pertama terbuka saat halaman dimuat
+      document.getElementById("tab-modul").style.display = "block";
+
+      // 2. Navbar scroll effect
+      const navbar = document.getElementById("navbar");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) navbar.classList.add("scrolled");
+        else navbar.classList.remove("scrolled");
+      });
+
+      // 3. Mobile Menu Hamburger
+      const hamburger = document.getElementById("hamburger");
+      const navMenu = document.getElementById("nav-menu");
+      hamburger.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+        hamburger.classList.toggle("active");
+      });
+
+      // 4. Mobile Dropdown Logic
+      const dropdownBtns = document.querySelectorAll(".dropbtn");
+      dropdownBtns.forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          if (window.innerWidth <= 900) {
+            e.preventDefault();
+            const content = btn.nextElementSibling;
+            const chevron = btn.querySelector(".chevron");
+
+            document.querySelectorAll(".dropdown-content").forEach((c) => {
+              if (c !== content) c.classList.remove("show");
+            });
+            document.querySelectorAll(".chevron").forEach((c) => {
+              if (c !== chevron) c.style.transform = "rotate(0deg)";
+            });
+
+            content.classList.toggle("show");
+            if (content.classList.contains("show")) chevron.style.transform = "rotate(180deg)";
+            else chevron.style.transform = "rotate(0deg)";
+          }
+        });
+      });
+
+      // 5. Scroll Reveal Animation
+      function reveal() {
+        var reveals = document.querySelectorAll(".reveal, .fade-in-up");
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 80;
+          if (elementTop < windowHeight - elementVisible) reveals[i].classList.add("active");
+        }
+      }
+      window.addEventListener("scroll", reveal);
+      reveal();
+    </script>
+  </body>
+</html>
